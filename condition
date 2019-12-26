@@ -1,0 +1,86 @@
+1.a>b?
+  a=int(input("enter a number a"))
+  b=int(input("enter a number b"))
+  if a>b:
+    print(a+"is greater")
+  elif b>a:
+    print(b+"is greater")
+
+2.a>b>c?
+   a=int(input("enter a number a"))
+   b=int(input("enter a number b"))
+   c=int(input("enter a number c"))
+   if ((a>b) and (a>c)) :
+     print(a+"is greater")
+   elif ((b>a) and (b>c)):
+     print(b+"is greater")
+   else :
+     print(c+"is greater")
+
+3.+/-/0?
+  a=int(input("enter a number a"))
+  if a<0 :
+   print(a+"is negative")
+  elif a>0 :
+   print(a+"is positive)
+  elif a==0:
+   print(a+"is zero")
+
+4.a%(5&11)?
+   a=int(input("enter a number a"))
+   if ((a%5) and (a%11)):
+      print(a+"is divisible by 5 and 11")
+   else :
+      print(a+"is not divisible by 5 and 11")
+
+5.a=even or odd?
+   a=int(input("enter a number a")
+   if a%2==0 :
+     print(a+"is a even number")
+   else :
+     print(a+"is a odd number")
+
+6.year =leap or not?
+  a=int(input("enter a year ")
+  if a%4==0:
+   print(a+"is a leap year")
+  else :
+   print(a+"is not a leap year")
+
+7.chara or not?
+   a=input("enter a character")
+
+
+
+   if((ch >= 'a' and ch <= 'z') or (ch >= 'A' and ch <= 'Z')): 
+     print(a+"is an Alphabet")     
+   eles: 
+        
+     print(a+"is not a char")
+
+
+
+8.char is v or c?
+      a=input("enter a character")
+
+
+      if (a=='a') or (a=='e') or (a=='i') or(a=='o') or (a=='u'):
+    
+         print(a+"is a vowel")
+
+      elif((a>= 'a' and a <= 'z') or (a >= 'A' and a <= 'Z')): 
+    
+         print(a+"is not a vowel")
+
+      else:
+   
+         print(a+"is not a alphabet")
+
+9.alpha r didit?
+ch = input("Please Enter Your Own Character : ")
+if((ch >= 'a' and ch <= 'z') or (ch >= 'A' and ch <= 'Z')): 
+    print( ch+"is an Alphabet") 
+elif(ch >= '0' and ch <= '9'):
+    print( ch+"is a Digit")
+else:
+    print( ch+"is a Special Character")    

@@ -1,0 +1,400 @@
+1.
+n = int(input("�nter the number "))
+i = 1
+while(i <= n):
+  print(i)
+  i += 1
+2.
+n = int(input("�nter the number "))
+while(n >= 1):
+  print(n)
+  n -= 1
+3.
+c = 97
+while(c <= 123): 
+  print(chr(c))
+  c = c+1
+4.
+c = 2
+while(c < 100): 
+  print((c))
+  c = c+2
+5.
+c = 1
+while(c < 100): 
+  print((c))
+  c = c+2
+
+6.
+i = 1
+c = 1
+n = int(input("Enter a number"))
+for i in range(1 , n+1):
+  c = c+i
+  i +=1
+print((c))
+
+7.
+c = 0
+n = int(input("Enter a number"))
+for i in range(2 , n+1, 2):
+  c = c+i
+  i +=1
+print((c))
+
+8.
+c = 0
+n = int(input("Enter a number"))
+for i in range(1 , n+1, 2):
+  c = c+i
+  i +=1
+print((c))
+
+9.
+c = 0
+n = int(input("Enter a number"))
+for i in range(1 , n+1, 2):
+  c = c+i
+  i +=1
+print((c));
+
+
+10.
+c = 1
+n = int(input("Enter a number"))
+for i in range(1 , 11):
+  c = n*i 
+  print(n,"*",i,"=",c )
+  i +=1
+
+11. 
+n=int(input("Enter number:"))
+ct=0
+while(n>0):
+    ct=ct+1
+    n=n//10
+print(ct)
+
+12.
+n=int(input("Enter number:"))
+ct=0
+l = n % 10
+while(n >= 10):
+    ct=ct+1
+    n=n//10
+print("First and last digit : ",n,l)
+
+13.
+n=int(input("Enter number:"))
+ct=0
+l = n % 10
+while(n >= 10):
+    ct=ct+1
+    n=n//10
+s = n + l 
+print("sum : ",s)
+
+14.
+n=int(input("Enter number:"))
+s=0
+while(n > 0):
+  temp = n % 10
+  s = s + temp
+  n=n//10
+print("sum : ",s)
+
+15.
+n = int(input())
+temp = n
+s = 0
+while(n>0):
+  temp= n % 10
+  s = s+temp 
+  n=n//10
+print(s)
+
+16.
+n = int(input())
+temp = n
+s = 0
+while(n>0):
+  temp= n % 10
+  s = s+temp 
+  n=n//10
+print(s)
+
+
+17.
+n = int(input())
+temp = n
+s = 1
+while(n>0):
+  temp= n % 10
+  s = s*temp 
+  n=n//10
+print(s)
+
+18.
+n = int(input())
+temp = n
+s = 0
+while(n>0):
+  temp= n % 10
+  s = s*10 + temp
+  n=n//10
+print(s)
+
+19.
+n = int(input())
+temp = n
+rev = n
+s = 0
+while(n>0):
+  temp= n % 10
+  s = s*10 + temp
+  n=n//10
+if(s == rev):
+  print("palindrome")
+else:
+  print("not palindrome")
+
+20.
+n = int(input())
+f = int(input())
+temp = n
+ct = 0
+while(n>0):
+  temp= n % 10
+  if(temp == f):
+    ct = ct +1
+  else:
+    pass
+  n=n//10
+print(f,ct)
+
+21.
+n = int(input())
+print(chr(n))
+
+22.
+n = 65
+while(n<124):
+  print(chr(n))
+  n = n+1
+
+
+23.
+n = int(input())
+p = int(input())
+s = 1
+for i in range(1,p+1):
+  s=s*n
+print(s)
+
+
+
+24.
+n = int(input())
+for i in range(1,n+1):
+  if(n % i == 0):
+    print(i)
+  else:
+    pass
+
+
+
+25.
+x = int(input())
+y = int(input())
+for i in range(1,y+1):
+  if((x % i == 0) and (y % i ==0))  :
+    hcf = i
+  else:
+    pass
+print(hcf)
+
+
+
+26.
+x = int(input())
+y = int(input())
+if(x>y):
+  g = x
+else:
+  g = y
+while(True):
+  if((g % x == 0) and (g % y ==0))  :
+    lcm =g
+    break
+  g = g+1
+print(lcm)
+
+
+
+27.
+num =int(input("Entert a number"))
+if num > 1:
+ for i in range(2, num):
+   if (num % i) == 0: 
+       print(num, "is not a prime number") 
+       break
+   else: print(num, "is a prime number")
+
+
+
+28.
+end =int(input("Entert a number"))
+for val in range(1, end + 1): 
+    if val > 1: 
+       for n in range(2, val): 
+           if (val % n) == 0: 
+               break
+       else: 
+           print(val)
+
+
+29.
+n=int(input("Enter an integer:"))
+print("Factors are:")
+i=1
+while(i<=n):
+    k=0
+    if(n%i==0):
+        j=1
+        while(j<=i):
+            if(i%j==0):
+                k=k+1
+            j=j+1
+        if(k==2):
+            print(i)
+    i=i+1
+
+
+30.
+n=int(input("Enter an integer:"))
+print("sum of factors are:")
+i=1
+s=0
+while(i<=n):
+    k=0
+    if(n%i==0):
+        j=1
+        while(j<=i):
+            if(i%j==0):
+                k=k+1
+            j=j+1
+        if(k==2):
+            s = s+i
+    i=i+1
+print(s)
+
+
+31.
+n=int(input("Enter an integer:"))
+temp = n
+p =0
+while(n > 0):
+  a=n%10
+  p = p + pow(3,a)
+ 
+  n=n//10
+if(p == temp):
+  print("Armstrong")
+else:
+  print("No")
+
+
+32.
+Number = int(input(" Please Enter any Number: "))
+Sum = 0
+for i in range(1, Number):
+    if(Number % i == 0):
+        Sum = Sum + i
+if (Sum == Number):
+    print(" %d is a Perfect Number" %Number)
+else:
+    print(" %d is not a Perfect Number" %Number)
+
+
+33.
+Number = int(input(" Please Enter any Number: "))
+Sum = 0
+Temp = Number
+while(Temp > 0):
+    Factorial = 1
+    i = 1
+    Reminder = Temp % 10
+    while(i <= Reminder):
+        Factorial = Factorial * i
+        i = i + 1
+    print("\n Factorial of %d = %d" %(Reminder, Factorial))
+    Sum = Sum + Factorial
+    Temp = Temp // 10
+print("\n Sum of Factorials of a Given Number %d = %d" %(Number, Sum))
+if (Sum == Number):
+    print(" %d is a Strong Number" %Number)
+else:
+    print(" %d is not a Strong Number" %Number)
+
+34.
+import math
+maximum = int(input(" Please Enter the Maximum Value: "))
+for Number in range(1, maximum):
+    Temp = Number
+    Sum = 0
+    while(Temp > 0):
+        Reminder = Temp % 10
+        Factorial = math.factorial(Reminder)
+        Sum = Sum + Factorial
+        Temp = Temp // 10
+    
+    if (Sum == Number):
+        print(" %d is a Strong Number" %Number)
+
+
+
+35.
+n = int(input())
+a = 0
+b = 1
+for i in range(1,n):
+  c=a+b
+  b=a
+  a=c
+  print(c)
+
+
+36.
+import math 
+def onesComplement(n):  
+    number_of_bits = (int)(math.floor(math.log(n)/math.log(2))) + 1  
+    return ((1 << number_of_bits) - 1) ^ n  
+n =int(input())
+print(onesComplement(n)) 
+
+37.
+def twos_complement(val, nbits):
+    if val < 0:
+        val = (1 << nbits) + val
+    else:
+        if (val & (1 << (nbits - 1))) != 0:
+            val = val - (1 << nbits)
+    return val
+value=int(input("enter the val"))
+bits=int(input("enter the no.of bits"))
+print(twos_complement(value,bits)
+
+38.
+binary = input("Enter any number in Binary Format: ")
+temp = int(binary, 2)
+print(binary,"in Octal =",oct(temp))
+
+39.
+binary = input("Enter any number in Binary Format: ")
+temp = int(binary, 2)
+print(temp)
+
+40.
+binary = input("Enter any number in Binary Format: ")
+temp = int(binary, 2)
+print(binary,"in Octal =",hex(temp))

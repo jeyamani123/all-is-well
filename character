@@ -1,0 +1,188 @@
+1.a=str(input("enter a character:"))
+  if (a.isupper()==True):
+     print(a+"is upper")
+  elif (a.islower()==True):
+     print(a+"is lower")
+
+2. 
+a=int(input("enter a week number(1-7):"))
+if(a==2):
+     print("Monday")
+elif(a==3):
+    print("Tuesday")
+elif(a==4):
+    print("Wenesday")
+elif(a==5):
+    print("Thursday")
+elif(a==6):
+    print("Friday")
+elif(a==7):
+    print("Saturday")
+elif(a==1):
+    print("Sunday")
+else:
+    print("invalid")
+
+
+3.
+a=int(input("enter the month number("1-12"))
+if(a==1):
+     print("31")
+elif(a==2):
+    print("28 or 29(if leap year)")
+elif(a==3):
+    print("31")
+elif(a==4):
+    print("30")
+elif(a==5):
+    print("31")
+elif(a==6):
+    print("30")
+elif(a==7):
+    print("31")
+elif(a==8):
+    print("31")
+elif(a==9):
+    print("30")
+elif(a==10):
+    print("31")
+elif(a==11):
+    print("30")
+elif(a==12):
+    print("31")
+else:
+    print("invalid")
+
+
+4.
+a=int(input("enter the amount:"))
+Q = [2000,1000,500, 200, 100, 50, 20, 10]
+x = 0
+for i in range(8):
+    q = Q[i]
+    x += int(a / q)
+    a = int(a % q)
+if a > 0:
+    x = -1
+print(x)
+
+5.
+print("enter the angles of triangle")
+a=int(input("enter the 1st angle"))
+b=int(input("enter the 2nd angle"))
+c=int(input("enter the 3rd angle"))
+d=a+b+c
+if(d==180):
+  print("valid triangle")
+else:
+  print("invalid triangle")   
+
+6.
+print("enter the sides of triangle")
+a=int(input("enter the 1st side"))
+b=int(input("enter the 2nd side"))
+c=int(input("enter the 3rd side"))
+if(((a+b)>c) and ((a+c)>b) and ((b+c)>a)):
+  print("valid triangle")
+else:
+  print("invalid triangle")   
+
+
+7.
+print("enter the sides of triangle")
+a=int(input("enter the 1st side"))
+b=int(input("enter the 2nd side"))
+c=int(input("enter the 3rd side"))
+if((a==b) and (a==c) and (b==c)):
+  print("equi traingle")
+elif((a==b) or (a==c) or (b==c)):
+  print(" isosceles triangle") 
+else:
+  print("scalene triangle")   
+
+
+8.
+print("Quadratic function : (a * x^2) + b*x + c")
+a = float(input("a: "))
+b = float(input("b: "))
+c = float(input("c: "))
+r = b**2 - 4*a*c
+if r > 0:
+    num_roots = 2
+    x1 = (((-b) + sqrt(r))/(2*a))     
+    x2 = (((-b) - sqrt(r))/(2*a))
+    print("There are 2 roots: %f and %f" % (x1, x2))
+elif r == 0:
+    num_roots = 1
+    x = (-b) / 2*a
+    print("There is one root: ", x)
+else:
+    num_roots = 0
+    print("No roots")
+
+
+9.
+s=int(input("enter the selling price:"))
+c=int(input("enter the cost  price:"))
+if s>c:
+  print("profit"+(s-c))
+elif c>s:
+  print("loss"+(c-s))
+else:
+  print("nohing")
+
+10.
+p=int(input("physics:"))
+c=int(input("chemistry:"))
+b=int(input("biology:"))
+m=int(input("maths:"))
+co=int(input("computer:"))
+pr=(((p+c+b+m+co)/500)*100)
+print("percentage:"+pr)
+if pr>= 90 : 
+   print("Grade A")
+elif pr>=80:
+   print("Grade B")
+elif pr>=70:
+   print("Grade C")
+elif pr>=60:
+   print("Grade D")
+elif pr>=40:
+    print("Grade E")
+elif pr<40:
+    print("Grade F")
+
+11.
+basic_salary=float(input("enter the salary"))
+hra = 0                                                                    
+da = 0     
+if (basic_salary <= 10000):                                                   
+      hra = (basic_salary *20 ) / 100                                        
+      da = (basic_salary * 80) / 100                                         
+elif(basic_salary<=20000):                                                                       
+        hra = (basic_salary*25)/100                                                            
+        da = (basic_salary * 90) / 100
+elif(basic_salary>20000):                                                                       
+        hra = (basic_salary*30)/100                                                            
+        da = (basic_salary * 95) / 100
+ print("gross_salary="+(basic_salary+hra+da))
+ 
+12.
+s = int(input())
+b1 = 50*0.5
+b2 = 100 * 0.75
+b3 = 100 * 1.20
+if(s<= 50):
+  b = s *0.5
+elif( s > 50 and s <= 150):
+  b = b1+(s-50)*0.75
+elif(s>150 and s<= 250):
+  b = b1+b2+(s-150)*1.20
+else:
+  b= b1+b2+b3+(s-250)*1.50
+b = b*0.20
+print("Bill: ",b)
+   
+
+  
+  

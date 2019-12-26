@@ -1,0 +1,140 @@
+1.a=int(input())
+  b=float(input())
+  c=str(input())
+  d=list(input())
+  e=tuple(input())
+  f=complex(input())
+  g=dict(input())
+  h=set(input())
+  i=bool(input())
+  print("int:"+a+"float:"+b+"string:"+c+"list:"+d+"tuple:"+e+"complex:"+f+"dict:"+g+"set:"+h+"boolean:"+i)
+
+2.
+n = int(input())
+x = int(input())
+s = x + n
+print(s)
+
+
+3.
+n = int(input())
+x = int(input())
+a = x + n
+s = n - x
+m = n * x
+d = n//x
+print("Addition :"+a)
+print("Sub : "+s)
+print("Product: "+m)
+print("Quotient: "+d)
+
+
+4.
+n = int(input("Enter length "))
+x = int(input("Enter breadth: "))
+a = x + n
+print("Perimeter :"+a)
+
+
+5.
+n = int(input("Enter length "))
+x = int(input("Enter breadth: "))
+a = x * n
+print("Area :"+a)
+
+
+6.
+r = int(input("Enter radius "))
+d = 2 * r
+c = 2 * 3.14 * r
+a = 3.14 * r * r
+print("Area :"+a)
+print("Circumference: "+c)
+print("Diameter :"+d)
+
+
+7.
+c = int(input("Enter in centimeter "))
+m = c/100
+k = m/1000
+print(float(m)+"m "+float(k) +"km")
+
+
+8.
+c = float(input("Enter celcius "))
+f = (c*(9/5)) + 32
+print(float(f))
+
+
+9.
+f = float(input("Enter fahrenheit "))
+c = (f-32) * (5/9)
+print(float(c))
+
+
+10.
+d = int(input("Enter days"))
+y = d/365
+w = d/7
+print(int(y)+" years "+int(w)+" weeks "+d+" days ") 
+
+
+11.
+x = int(input())
+y = int(input())
+p = pow(x,y)
+print(p)
+
+
+12.
+x = int(input())
+y = int(input())
+z = 180 - (x + y)
+print(z)
+
+
+13.
+import math
+x = int(input())
+print(math.sqrt(x))
+
+14.
+h= int(input())
+b = int(input())
+a = 0.5*( b * h)
+print("Area: ",float(a))
+
+
+15.
+import math
+s = int(input())
+a = (math.sqrt(3)/4)*(pow(s,2))
+print(float(a))
+
+16.
+s1 = int(input())
+s2 = int(input())
+s3 = int(input())
+s4 = int(input())
+s5 = int(input())
+t= s1+s2+s3+s4+s5
+avg=t/5
+per = (t/500)*100
+print("Total: "+t+" Average: "+avg+"Percentage: "+per)
+
+17.
+p = int(input())
+n = int(input())
+r = int(input())
+s = (p*n*r)/100
+print("SI: "+s)
+
+18.
+p = int(input())
+n = int(input())
+r = float(input())
+t = int(input())
+x = 1 + (r/n)
+y= n*t
+a = p*pow(x,y)
+print("CI: "+a)

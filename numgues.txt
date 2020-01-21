@@ -1,0 +1,9 @@
+from random import randint
+ran=randint(1,10)
+n=5
+while(n>=0):
+  a=int(input("enter the number"))
+  if(a==ran):
+    print("you win")
+  else
+    i=i-1

@@ -1,0 +1,33 @@
+print("welcome to quiz")
+src=0
+ques={0:"What will be highest score of Dhoni in ODI",1:"What will be highest score of Dhoni in T20",2:"What will be highest score of Dhoni in IPL",3:"What will be highest score of Dhoni in Test"}
+ans={0:(183,100,199),1:(77,99,56),2:(55,75,84),3:(250,163,224)}
+b=len(ques)
+for i in range(0,b):
+  print("QUESTION",i+1,":",ques[i])
+  c=len(ans[i])
+  for j in range(0,c):
+    print(j,":",ans[i][j])
+  ch=int(input("enter your choice"))
+  if(i==0):
+    if(ch==0):
+        src=src+5
+    else:
+        src=src-1
+  if(i==1):
+    if(ch==2):
+        src=src+5
+    else:
+        src=src-1
+  if(i==2):
+    if(ch==2):
+        src=src+5
+    else:
+        src=src-1
+  if(i==3):
+    if(ch==2):
+        src=src+5
+    else:
+        src=src-1
+print("your score:",src)
+    

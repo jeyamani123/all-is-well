@@ -1,0 +1,28 @@
+import random
+ws=["brain","nice","god","home","first"]
+w=random.choice(words)
+print("\nWelcome to Hangman")
+i=0
+c=''
+gu=''
+length=len(word)
+while(i<10):
+    a=0
+    for c in word:
+        if c in guesses:
+            print(c,end="  ")
+        else:
+            print(end=" _ ")
+            a=a+1
+    if attempt==0:
+        print("\n\n ******You won****** ")
+        print("\n",word,"is correct guess")
+        break
+    g=input("\n\n Guess the letter : ")
+    gu=g+gu
+    print(gu)
+    if guess not in word:
+        print("Wrong you have : ",9-i," attempts")
+        i=i+1
+        if i==12:
+            print("Game over")

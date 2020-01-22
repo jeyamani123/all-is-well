@@ -1,0 +1,152 @@
+1.
+movie_box = {
+    "Robin Hood: Men in Tights": {
+        "imdb_stars": 6.7,
+        "length": 104,
+        "stars": [ {"name": "Cary Elwes", "imdb": "nm0000144", "role": "Robin Hood"},
+                   {"name": "Richard Lewis", "imdb": "nm0507659", "role": "Prince John"} ]
+    }
+}
+
+print("IMDB_Stars:",movie_box["Robin Hood: Men in Tights"]["imdb_stars"],"Length of movie:",movie_box["Robin Hood: Men in Tights"]["length"])
+
+2.
+body = {
+    'query': {
+        'filtered': {
+            'query': {
+                'match': {'description': 'addictive'}
+            },
+            'filter': {
+                'term': {'created_by': 'Mats'}
+            }
+        }
+    }
+}
+
+#Modify the below statement to print Mats
+print(body["query"]['filtered']['filter']['term']['created_by'])
+
+3.
+wtf = {2: [1, 2, 3], 'a': {'b': {'c': {'d': {'e': [1, 2, 3]}}}}}
+
+#Get the first array value for the key 2
+print(wtf[2][0])
+#Print all the array value for the key 2
+print(wtf[2])
+#Print value of key 'a','b','c','d','e'
+print(wtf['a'],wtf['a']['b'],wtf['a']['b']['c'],wtf['a']['b']['c']['d'],wtf['a']['b']['c']['d']['e'])
+#Print the sum of the array with key 'e'
+c=len(wtf['a']['b']['c']['d']['e'])
+a=0
+for i in range(0,c):
+    a=((wtf['a']['b']['c']['d']['e'][i])+a)
+print(a)
+#set value of key 'e' to ['Chera','Chola','Pandiya']
+wtf['a']['b']['c']['d']['e']=['Chera','Chola','Pandiya']
+print(wtf['a']['b']['c']['d']['e'])
+
+4.
+junk = {
+    "characters": {
+        "Lonestar": {
+            "id": 55923,
+            "role": "renegade",
+            "items": [
+                "space winnebago",
+                "leather jacket"
+            ]
+        },
+        "Barfolomew": {
+            "id": 55924,
+            "role": "mawg",
+            "items": [
+                "peanut butter jar",
+                "waggy tail"
+            ]
+        },
+        "Dark Helmet": {
+            "id": 99999,
+            "role": "Good is dumb",
+            "items": [
+                "Shwartz",
+                "helmet"
+            ]
+        },
+        "Skroob": {
+            "id": 12345,
+            "role": "Spaceballs CEO",
+            "items": [
+                "luggage"
+            ]
+        }
+    }
+}
+print(junk["characters"]["Lonestar"]["items"],junk["characters"]["Lonestar"]["role"])
+print(junk["characters"]["Barfolomew"]["items"],junk["characters"]["Barfolomew"]["role"])
+print(junk["characters"]["Dark Helmet"]["items"],junk["characters"]["Dark Helmet"]["role"])
+print(junk["characters"]["Skroob"]["items"],junk["characters"]["Skroob"]["role"])
+
+
+5.
+prices = {'apple': 0.40, 'banana': 0.50}
+my_purchase = {
+    'apple': 1,
+    'banana': 6}
+total=((my_purchase["apple"]*prices['apple'])+(my_purchase["banana"]*prices['banana']))
+print(total)
+
+6.
+py = {'Python': 'Rocks', 'inferior': ['java', 'cobol']}
+print(py['inferior'])
+
+7.
+l = [
+    {
+        "color": "red",
+        "value": "#f00"
+    },
+    {
+        "color": "green",
+        "value": "#0f0"
+    },
+    {
+        "color": "blue",
+        "value": "#00f"
+    }
+]
+#Print all the value in the list
+print(l)
+#print the hex value of green
+print(l[1]["value"])
+#print the hex codes of all colors
+c=len(l)
+for i in range(0,c):
+ print(l[i]["value"])
+ 
+ 
+ 8.
+ l3 = [
+    (105, "d"),
+    (21, "z"),
+    (0, "v")
+]
+print(l3)
+
+
+9.
+l2 = [3, 1, 4, 2, 5]
+for i in l2:
+    print(i**2)
+    
+
+10.
+l1 = [3, 1, 4, 2, 5]
+
+for i in range(len(l1)):
+    for j in range(i + 1, len(l1)):
+
+        if l1[i] > l1[j]:
+           l1[i], l1[j] = l1[j], l1[i]
+
+print (l1)

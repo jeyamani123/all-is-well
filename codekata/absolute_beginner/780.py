@@ -1,0 +1,6 @@
+p,t,r=(input().split())
+p=float(p)
+t=float(t)
+r=float(r)
+s=(((p*t*r)/100))
+print(round(s,2))

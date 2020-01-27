@@ -6,7 +6,7 @@ def getList(dict):
     return dict.keys() 
 def signup():
   i=0
-  f=open("bank.txt","w+")
+  f=open("bank1.txt","w+")
   usename=input("Enter a name")
   password = int(input("password:"))
   l=list(range(100,1000))
@@ -33,37 +33,42 @@ def signup():
   
   
 def deposit(userid):
-    f=open("bank.txt","r+")
+    f=open("bank1.txt","r+")
     u=eval(f.read())
     amount=u[userid][3]
+    f.close()
     d_amount=int(input("Enter amount to deposit"))
     if d_amount<500 and (d_amount+amount)>50000:
         print("canot be deposited")
     else:
         amount=amount+d_amount
         print(amount)
-    u.update({userid[3]:amount})
-    f.write("%s\n\r"%u)
-    f.close()
+    f1=open("bank1.txt","w+")
+    u[userid][3]=amount
+    f1.write("%s\n\r"%u)
+    f1.close()
         
         
         
 def withdraw(userid):
-    f=open("bank.txt","r+")
+    f=open("bank1.txt","r+")
     y=eval(f.read())
     amount=y[userid][3]
+    f.close()
     w_amount=int(input("enter withdraw amount"))
     if amount<=500 and (amount-w_amount<500):
         print("cannot be  withdraw the amount")
     else:
         amount=amount-w_amount
         print (amount)
-        y.update({userid[amount]:amount})
-        f.write("%s\n\r"%y)
+    f1=open("bank1.txt","w+")
+    y[userid][3]=amount
+    f1.write("%s\n\r"%y)
+    f1.close()
         
         
 def bal_check(userid):
-    f=open("bank.txt","r+")
+    f=open("bank1.txt","r+")
     r=eval(f.read())
     amount=r[userid][3]
     print(amount)
@@ -71,7 +76,7 @@ def bal_check(userid):
     
 def login():
     c=0
-    f=open("bank.txt","r+")
+    f=open("bank1.txt","r+")
     idt=int(input("UserID:"))
     passw=int(input("password:"))
     b=f.read()

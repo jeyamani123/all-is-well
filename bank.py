@@ -6,7 +6,7 @@ def getList(dict):
     return dict.keys() 
 def signup():
   i=0
-  f=open("bank1.txt","w+")
+  f=open("bank1.txt","a+")
   usename=input("Enter a name")
   password = int(input("password:"))
   l=list(range(100,1000))

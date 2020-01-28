@@ -98,8 +98,8 @@ def login():
                     break
                 else:
                     print("login unsuccesfull")
-                    userid=int(input("userid:"))
-                    password=int(input("password:"))
+                    idt=int(input("userid:"))
+                    passw=int(input("password:"))
                     d=d+1
             else:
                 print("userid and password are incorrect..... enter correctly")

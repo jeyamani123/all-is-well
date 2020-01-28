@@ -38,7 +38,7 @@ def deposit(userid):
     amount=u[userid][3]
     f.close()
     d_amount=int(input("Enter amount to deposit"))
-    if d_amount<500 and (d_amount+amount)>50000:
+    if d_amount<500 or (d_amount+amount)>50000:
         print("canot be deposited")
     else:
         amount=amount+d_amount
@@ -56,7 +56,7 @@ def withdraw(userid):
     amount=y[userid][3]
     f.close()
     w_amount=int(input("enter withdraw amount"))
-    if amount<=500 and (amount-w_amount<500):
+    if amount<=500 or (amount-w_amount<500):
         print("cannot be  withdraw the amount")
     else:
         amount=amount-w_amount

@@ -8,7 +8,7 @@ def signup():
   i=0
   f=open("bank1.txt","a+")
   usename=input("Enter a name")
-  password = int(input("password:"))
+  password = (input("password:"))
   l=list(range(100,1000))
   random.shuffle(l)
   accid=l.pop()
@@ -78,7 +78,7 @@ def login():
     c=0
     f=open("bank1.txt","r+")
     idt=int(input("UserID:"))
-    passw=int(input("password:"))
+    passw=(input("password:"))
     b=f.read()
     c=eval(b)
     d=0
@@ -99,12 +99,12 @@ def login():
                 else:
                     print("login unsuccesfull")
                     idt=int(input("userid:"))
-                    passw=int(input("password:"))
+                    passw=(input("password:"))
                     d=d+1
             else:
                 print("userid and password are incorrect..... enter correctly")
                 idt=int(input("userid:"))
-                passw=int(input("password:"))
+                passw=(input("password:"))
                 d=d+1
 
 

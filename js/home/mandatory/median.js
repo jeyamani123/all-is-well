@@ -1,4 +1,4 @@
-var a=function (b,m,){
+var a=function (b,m){
     var d=b+m;
     var c=((Number(d[6])+Number(d[7]))/2);
     console.log(c);
